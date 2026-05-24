@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SoulMove — Simulador</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a class="brand" href="index.html">SoulMove</a>
+        <button id="btn-hamburger" class="hamburger" aria-label="Abrir menu">☰</button>
+        <ul id="menu" class="menu" data-visible="false">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="integrantes.html">Equipe</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="simulador.html">Simulador</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Simulador de Viagem</h1>
+      <form id="sim-form" class="form">
+        <label for="origin">Origem</label>
+        <input id="origin" name="origin" type="text" required>
+
+        <label for="destination">Destino</label>
+        <input id="destination" name="destination" type="text" required>
+
+        <label for="distance">Distância (km)</label>
+        <input id="distance" name="distance" type="number" min="0.1" step="0.1" required>
+
+        <label for="transport">Tipo de transporte</label>
+        <select id="transport" name="transport" required>
+          <option value="metro">Metrô</option>
+          <option value="onibus">Ônibus</option>
+          <option value="trem">Trem</option>
+        </select>
+
+        <label for="balance">Saldo pontos</label>
+        <input id="balance" name="balance" type="number" min="0" value="150" required>
+
+        <div class="form-feedback" id="sim-feedback" aria-live="polite"></div>
+
+        <button type="submit" class="btn">Simular viagem</button>
+      </form>
+
+      <section id="sim-result" class="sim-result" hidden>
+        <h2>Resultado da Simulação</h2>
+        <p id="result-transport">Transporte: —</p>
+        <p id="result-points">Pontos necessários: —</p>
+        <p id="result-voucher">Voucher: R$5,20</p>
+        <p id="result-co2">CO2 evitado: — kg</p>
+        <p id="result-saldo">Saldo suficiente: —</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>© 2026 SoulMove — Projeto acadêmico SoulUp / FIAP</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
