@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SoulMove — Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a class="brand" href="index.html">SoulMove</a>
+        <button id="btn-hamburger" class="hamburger" aria-label="Abrir menu">☰</button>
+        <ul id="menu" class="menu" data-visible="false">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="integrantes.html">Equipe</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="simulador.html">Simulador</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Dashboard</h1>
+      <section class="dashboard-grid">
+        <div class="dash-card">
+          <h2>Pontos disponíveis</h2>
+          <p id="dash-points">150</p>
+        </div>
+        <div class="dash-card">
+          <h2>Vouchers gerados</h2>
+          <p id="dash-vouchers">3</p>
+        </div>
+        <div class="dash-card">
+          <h2>CO2 evitado (kg)</h2>
+          <p id="dash-co2">12.4</p>
+        </div>
+        <div class="dash-card">
+          <h2>Viagens realizadas</h2>
+          <p id="dash-trips">7</p>
+        </div>
+      </section>
+
+      <section class="history">
+        <h2>Histórico</h2>
+        <ul id="history-list">
+          <li>Paulista → FIAP</li>
+          <li>Tatuapé → Centro</li>
+          <li>Pinheiros → Paulista</li>
+        </ul>
+        <button id="btn-update" class="btn">Atualizar dados</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>© 2026 SoulMove — Projeto acadêmico SoulUp / FIAP</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

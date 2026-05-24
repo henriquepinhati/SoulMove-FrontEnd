@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SoulMove — Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a class="brand" href="index.html">SoulMove</a>
+        <button id="btn-hamburger" class="hamburger" aria-label="Abrir menu">☰</button>
+        <ul id="menu" class="menu" data-visible="false">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="integrantes.html">Equipe</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="simulador.html">Simulador</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Contato</h1>
+      <form id="contact-form" class="form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Assunto</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div class="form-feedback" id="contact-feedback" aria-live="polite"></div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>© 2026 SoulMove — Projeto acadêmico SoulUp / FIAP</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
