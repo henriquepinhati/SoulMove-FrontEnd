@@ -1,0 +1,42 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mobilidadeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1DB954;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1aa142;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="#F4F7F9" stroke="url(#mobilidadeGrad)" stroke-width="2"/>
+  
+  <!-- City skyline -->
+  <g opacity="0.3" fill="url(#mobilidadeGrad)">
+    <rect x="30" y="110" width="15" height="50" rx="2"/>
+    <rect x="55" y="100" width="15" height="60" rx="2"/>
+    <rect x="80" y="105" width="15" height="55" rx="2"/>
+    <rect x="105" y="100" width="15" height="60" rx="2"/>
+    <rect x="130" y="110" width="15" height="50" rx="2"/>
+    <rect x="155" y="105" width="15" height="55" rx="2"/>
+  </g>
+  
+  <!-- Metro/Train -->
+  <g transform="translate(50, 70)">
+    <!-- Body -->
+    <rect x="0" y="0" width="100" height="28" rx="4" fill="url(#mobilidadeGrad)" stroke="#1DB954" stroke-width="2"/>
+    <!-- Windows -->
+    <rect x="8" y="4" width="12" height="10" fill="#FFFFFF" opacity="0.4" rx="1"/>
+    <rect x="28" y="4" width="12" height="10" fill="#FFFFFF" opacity="0.4" rx="1"/>
+    <rect x="48" y="4" width="12" height="10" fill="#FFFFFF" opacity="0.4" rx="1"/>
+    <rect x="68" y="4" width="12" height="10" fill="#FFFFFF" opacity="0.4" rx="1"/>
+    <!-- Wheels -->
+    <circle cx="15" cy="30" r="3" fill="url(#mobilidadeGrad)"/>
+    <circle cx="85" cy="30" r="3" fill="url(#mobilidadeGrad)"/>
+  </g>
+  
+  <!-- Road/Track lines -->
+  <line x1="30" y1="105" x2="170" y2="105" stroke="url(#mobilidadeGrad)" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Motion lines -->
+  <line x1="20" y1="80" x2="40" y2="80" stroke="url(#mobilidadeGrad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="15" y1="90" x2="30" y2="90" stroke="url(#mobilidadeGrad)" stroke-width="1.5" opacity="0.4"/>
+</svg>

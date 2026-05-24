@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1DB954;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1aa142;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="heroGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B1F33;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3a52;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circles -->
+  <circle cx="200" cy="150" r="120" fill="url(#heroGrad1)" opacity="0.1"/>
+  <circle cx="200" cy="150" r="100" fill="url(#heroGrad1)" opacity="0.15"/>
+  <circle cx="200" cy="150" r="80" fill="url(#heroGrad1)" opacity="0.2"/>
+  
+  <!-- Earth/Globe -->
+  <circle cx="200" cy="150" r="60" fill="#1DB954" opacity="0.8"/>
+  <path d="M 160 140 Q 180 130 200 140 Q 180 150 160 140" fill="#ffffff" opacity="0.3"/>
+  <path d="M 180 170 Q 200 180 220 170 Q 200 160 180 170" fill="#ffffff" opacity="0.2"/>
+  
+  <!-- Leaf accent -->
+  <g transform="translate(240, 110)">
+    <path d="M 0 -25 Q 12 -15 15 0 Q 12 18 0 25 Q -12 18 -15 0 Q -12 -15 0 -25" 
+          fill="url(#heroGrad1)" stroke="#ffffff" stroke-width="1.5"/>
+    <path d="M 0 -20 Q 6 -10 6 0 Q 6 10 0 18" 
+          fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Transport symbols -->
+  <!-- Bus -->
+  <g transform="translate(130, 240)">
+    <rect x="0" y="0" width="40" height="22" rx="3" fill="none" stroke="url(#heroGrad1)" stroke-width="2"/>
+    <rect x="5" y="3" width="12" height="8" rx="1" fill="url(#heroGrad1)" opacity="0.4"/>
+    <rect x="23" y="3" width="12" height="8" rx="1" fill="url(#heroGrad1)" opacity="0.4"/>
+    <circle cx="10" cy="26" r="2.5" fill="url(#heroGrad1)"/>
+    <circle cx="30" cy="26" r="2.5" fill="url(#heroGrad1)"/>
+  </g>
+  
+  <!-- Metro symbol -->
+  <g transform="translate(260, 240)">
+    <circle cx="5" cy="5" r="4" fill="none" stroke="url(#heroGrad1)" stroke-width="1.5"/>
+    <line x1="5" y1="9" x2="5" y2="15" stroke="url(#heroGrad1)" stroke-width="1.5"/>
+    <circle cx="5" cy="18" r="2.5" fill="url(#heroGrad1)"/>
+  </g>
+  
+  <!-- Decorative dots -->
+  <circle cx="100" cy="80" r="3" fill="url(#heroGrad1)" opacity="0.5"/>
+  <circle cx="300" cy="100" r="3" fill="url(#heroGrad1)" opacity="0.4"/>
+  <circle cx="90" cy="220" r="2" fill="url(#heroGrad1)" opacity="0.3"/>
+  <circle cx="310" cy="230" r="2" fill="url(#heroGrad1)" opacity="0.3"/>
+</svg>

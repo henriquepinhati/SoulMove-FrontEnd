@@ -1,0 +1,45 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="impactoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1DB954;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1aa142;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="#F4F7F9" stroke="url(#impactoGrad)" stroke-width="2"/>
+  
+  <!-- Planet Earth -->
+  <circle cx="100" cy="80" r="35" fill="#4a90e2" stroke="url(#impactoGrad)" stroke-width="2"/>
+  
+  <!-- Continents (green) -->
+  <path d="M 75 85 Q 80 75 90 80 Q 85 90 75 85" fill="url(#impactoGrad)"/>
+  <path d="M 110 70 Q 120 65 125 75 Q 120 85 110 80" fill="url(#impactoGrad)"/>
+  
+  <!-- Leaf/Environmental symbol (big) -->
+  <g transform="translate(100, 130)">
+    <!-- Leaf outline -->
+    <path d="M 0 -30 Q 18 -18 22 0 Q 18 25 0 35 Q -18 25 -22 0 Q -18 -18 0 -30" 
+          fill="url(#impactoGrad)" stroke="#1DB954" stroke-width="2"/>
+    <!-- Leaf vein -->
+    <path d="M 0 -25 Q 10 -10 10 0 Q 10 15 0 30" 
+          fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  
+  <!-- CO2 reduction indicator -->
+  <g transform="translate(140, 110)">
+    <!-- Down arrow -->
+    <line x1="0" y1="0" x2="0" y2="20" stroke="url(#impactoGrad)" stroke-width="2.5"/>
+    <polyline points="0,20 -6,12 6,12" fill="none" stroke="url(#impactoGrad)" stroke-width="2.5"/>
+    <!-- CO2 text -->
+    <text x="0" y="-8" font-size="10" font-weight="bold" text-anchor="middle" fill="url(#impactoGrad)">CO₂</text>
+  </g>
+  
+  <!-- Stars/positive impact -->
+  <g opacity="0.6" fill="url(#impactoGrad)">
+    <circle cx="50" cy="50" r="2.5"/>
+    <circle cx="150" cy="60" r="2.5"/>
+    <circle cx="60" cy="140" r="2"/>
+    <circle cx="140" cy="150" r="2"/>
+  </g>
+</svg>
